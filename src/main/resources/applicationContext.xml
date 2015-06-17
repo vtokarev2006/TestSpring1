@@ -12,5 +12,8 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <bean id="sonet29" class="Sonet29">
     </bean>
 
+    <bean id="theStage" class="Stage" factory-method="getInstance" >
+    </bean>
+
 
 </beans>

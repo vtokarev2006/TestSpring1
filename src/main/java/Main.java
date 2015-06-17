@@ -11,6 +11,9 @@ public class Main {
 
         performer.perform();
 
+        Stage stage = (Stage) ctx.getBean("theStage");
+
+        stage.mStage();
 
 
     }
