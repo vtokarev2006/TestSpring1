@@ -3,20 +3,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 
-    public static void main(String [] args) throws PerformanceException {
+    public static void main(String[] args) throws PerformanceException {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Performer performer = (Performer) ctx.getBean("duke");
+        Performer performer1 = (Performer) ctx.getBean("saxophonist1");
+        performer1.perform();
 
-        performer.perform();
-
-        Stage stage = (Stage) ctx.getBean("theStage");
-
-        stage.mStage();
-
+        Performer performer2 = (Performer) ctx.getBean("saxophonist2");
+        performer2.perform();
 
     }
-
-
 }
